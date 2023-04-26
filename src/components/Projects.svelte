@@ -1,47 +1,50 @@
-<section class="projects">
-  <h2>Solar Carport Projects</h2>
-  <div class="projects-container">
-    <div class="project">
-      <img src="/media/prov-ri.jpg" alt="Project Image" class="project-image">
-      <h3>Location 1</h3>
-    </div>
-    <!-- Add more locations as needed -->
-  </div>
+<!-- Projects.svelte -->
+<script>
+  import { push } from 'svelte-spa-router';
+  
+  const navigateToCategory = (category) => {
+    push(category);
+  };
+</script>
 
-  <h2>Solar Field Projects</h2>
+<section>
+  <h2>Projects</h2>
   <div class="projects-container">
-    <div class="project">
-      <img src="media/baltimore.jpg" alt="Project Image" class="project-image">
-      <h3>Location 1</h3>
+    <div class="project-category" on:click={() => navigateToCategory('/solar-carport-projects')}>
+      <img src="/media/baltimore.jpg" alt="Solar Carport Projects" class="project-image" />
+      <h3 class="project-title">Solar Carport Projects</h3>
     </div>
-    <!-- Add more locations as needed -->
+    <div class="project-category" on:click={() => navigateToCategory('/solar-field-projects')}>
+      <img src="/media/prov-ri.jpg" alt="Solar Field Projects" class="project-image" />
+      <h3 class="project-title">Solar Field Projects</h3>
+    </div>
   </div>
 </section>
-<style>
-  .projects {
-    text-align: center;
-    padding: 40px;
-  }
 
+<style>
   .projects-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
   }
 
-  .project {
-    max-width: 300px;
-    background-color: #f9bc60;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .project-category {
+    text-align: center;
+    cursor: pointer;
   }
 
   .project-image {
     width: 100%;
-    height: auto;
+    max-width: 300px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .project-title {
+    margin-top: 10px;
+    font-weight: 600;
   }
 </style>
+
