@@ -37,6 +37,16 @@
 	  updateComponent();
 	});
   </script>
+
+<header>
+	<div class="logo-container">
+	  <img src="media/logo.png" alt="Company Logo" class="logo" />
+	</div>
+	<div class="header-text">
+	  <h1 class="company-title">S.S.E. ENTERPRISES LLC.</h1>
+	  <h2 class="company-subtitle">Your Renewable Energy Partner</h2>
+	</div>
+  </header>
   
   <Navbar />
   <svelte:component this="{CurrentComponent}" />

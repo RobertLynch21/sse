@@ -3,9 +3,9 @@
 </script>
 
 <section class="home">
-  <div class="image-background">
+  <!-- <div class="image-background">
     <img src="media/background.jpg" alt="Background">
-  </div>
+  </div> -->
 
   <div class="home-content">
     <h1>Welcome to the Solar Company</h1>
