@@ -47,7 +47,34 @@
 	  <h2 class="company-subtitle">Your Renewable Energy Partner</h2>
 	</div>
   </header>
-  
+  <div class="page-container">
   <Navbar />
+  <div class="content-wrap">
   <svelte:component this="{CurrentComponent}" />
+</div>
+</div>
+  <footer>
+	<p>&copy; 2023 S.S.E. Enterprise, LLC. All rights reserved.</p>
+  </footer>
+  
+  <style>
+	.page-container {
+	  display: flex;
+	  flex-direction: column;
+	  min-height: 100vh;
+	}
+  
+	.content-wrap {
+	  flex: 1;
+	}
+  
+	footer {
+	  background-color: #1d1e22;
+	  padding: 20px;
+	  text-align: center;
+	  font-size: 0.9rem;
+	  color: #ffffff;
+	  border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+  </style>
   
