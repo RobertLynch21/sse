@@ -21,7 +21,7 @@
   </div>
 
   <div class="social-media">
-    <a href="https://www.facebook.com/solarcompany" target="_blank" rel="noopener noreferrer" class="social-link">
+    <a href="https://www.facebook.com/sseenterprisellc/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank" rel="noopener noreferrer" class="social-link">
       <img src="/media/facebook.png" alt="Facebook" class="social-icon">
     </a>
     <a href="https://www.linkedin.com/company/solarcompany" target="_blank" rel="noopener noreferrer" class="social-link">

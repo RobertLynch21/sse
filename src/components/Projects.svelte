@@ -2,24 +2,36 @@
 <script>
   import { push } from 'svelte-spa-router';
   
-  const navigateToCategory = (category) => {
-    push(category);
+  const navigateToCategory = (path) => {
+    push(path);
   };
 </script>
 
+<!-- Projects.svelte -->
 <section>
   <h2>Projects</h2>
   <div class="projects-container">
-    <div class="project-category" on:click={() => navigateToCategory('/solar-carport-projects')}>
-      <img src="/media/baltimore.jpg" alt="Solar Carport Projects" class="project-image" />
+    <div class="project-category">
+      <img
+        src="/media/baltimore.jpg"
+        alt="Solar Carport Projects"
+        class="project-image"
+        on:click={() => navigateToCategory('/solarCarportProjects')}
+      />
       <h3 class="project-title">Solar Carport Projects</h3>
     </div>
-    <div class="project-category" on:click={() => navigateToCategory('/solar-field-projects')}>
-      <img src="/media/prov-ri.jpg" alt="Solar Field Projects" class="project-image" />
+    <div class="project-category">
+      <img
+        src="/media/prov-ri.jpg"
+        alt="Solar Field Projects"
+        class="project-image"
+        on:click={() => navigateToCategory('/solar-field-projects')}
+      />
       <h3 class="project-title">Solar Field Projects</h3>
     </div>
   </div>
 </section>
+
 
 <style>
   .projects-container {
